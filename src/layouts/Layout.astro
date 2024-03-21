@@ -1,0 +1,23 @@
+---
+import Header from "@/components/Header.astro";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/thumb.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>
+      Rebeca Lima | Nutricionista / Personal Chef / Organização Alimentar
+    </title>
+    <ViewTransitions />
+  </head>
+  <body class="h-full w-full">
+    <Header />
+    <slot />
+  </body>
+</html>

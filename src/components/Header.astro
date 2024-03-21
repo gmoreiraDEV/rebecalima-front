@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+---
+
+<header class="flex flex-column p-4">
+  <nav class="flex justify-between items-center w-full">
+    <Image
+      src="/thumb.png"
+      alt="Logo Rebeca Lima"
+      class="aspect-square w-20"
+      width="80"
+      height="80"
+      loading="eager"
+    />
+    <div class="flex justify-between items-center gap-4">
+      <a href="/">Início</a>
+      <a href="/personal-chef">Personal Chef</a>
+      <a href="/nutricao">Nutrição</a>
+      <a href="/organizacao-alimentar">Organização alimentar</a>
+    </div>
+    <a href="https://app.rebecalimanutri.com.br">Login</a>
+  </nav>
+</header>
